@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product Details — AH Kitchen Appliances</title>
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="AH Kitchen Appliances Logo" />
+      <div class="brand-text">
+        <div class="name">AH Kitchen Appliances</div>
+        <div class="tag">Premium Kitchenware</div>
+      </div>
+    </a>
+    <a class="btn btn-whatsapp" id="headerWaBtn" target="_blank" rel="noopener">💬 WhatsApp</a>
+  </div>
+</header>
+
+<div class="container">
+  <a href="index.html" class="back-link">← Back to all products</a>
+  <div class="product-detail" id="detailContainer">
+    <!-- injected by JS -->
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> AH Kitchen Appliances. All rights reserved.</span>
+    <a href="admin.html" class="owner-link">•</a>
+  </div>
+</footer>
+
+<a href="#" id="waFloat" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabaseClient.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>

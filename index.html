@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AH Kitchen Appliances — Premium Kitchenware for a Better Home</title>
+<meta name="description" content="AH Kitchen Appliances — pressure cookers, sandwich makers, irons, air fryers aur bohat kuch. Best prices, direct WhatsApp order." />
+<link rel="icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="AH Kitchen Appliances Logo" />
+      <div class="brand-text">
+        <div class="name">AH Kitchen Appliances</div>
+        <div class="tag">Premium Kitchenware</div>
+      </div>
+    </a>
+    <div class="header-actions">
+      <div class="header-search">
+        <span>🔍</span>
+        <input type="text" id="searchInput" placeholder="Search products..." />
+      </div>
+      <a class="btn btn-whatsapp" id="headerWaBtn" target="_blank" rel="noopener">
+        <span>💬</span> WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="hero-eyebrow">Premium Kitchenware for a Better Home</span>
+      <h1>Cook Better, <span>Live Healthier</span> with AH Kitchen Appliances</h1>
+      <p>Pressure cookers, air fryers, irons aur sandwich makers — sab kuch ek jagah, behtareen quality aur seedha aapke ghar tak.</p>
+      <div class="hero-cta">
+        <a href="#products" class="btn btn-primary">Shop Now →</a>
+        <a href="#" id="heroWaBtn" class="btn btn-outline" style="color:#fdf7e8;border-color:#fdf7e8;" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="glow-card">
+        <img src="assets/images/air-fryer.jpg" alt="AH Kitchen Appliances" width="360" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Trending Products ===== -->
+<section class="section" id="trending">
+  <div class="container">
+    <h2 class="section-title">🔥 Trending Products</h2>
+    <p class="section-sub">Hamare sabse pasandeeda products, abhi dekhein</p>
+    <div class="carousel-arrows">
+      <button id="prevBtn" aria-label="Previous">‹</button>
+      <button id="nextBtn" aria-label="Next">›</button>
+    </div>
+    <div class="carousel-wrap">
+      <div class="carousel-track" id="trendingTrack">
+        <!-- trending cards injected by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Categories ===== -->
+<section class="section alt" id="categories">
+  <div class="container">
+    <h2 class="section-title">Shop by Category</h2>
+    <p class="section-sub">Apni zaroorat ke mutabiq category chunein</p>
+    <div class="category-grid" id="categoryGrid">
+      <!-- categories injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== All Products ===== -->
+<section class="section" id="products">
+  <div class="container">
+    <h2 class="section-title">All Products</h2>
+    <p class="section-sub" id="productsSub">Hamari poori range dekhein</p>
+    <div class="product-grid" id="productGrid">
+      <!-- products injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>AH Kitchen Appliances</h4>
+      <p>Premium kitchenware for a better home. Behtareen quality, munasib qeemat, aur bharosemand service.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="#trending">Trending Products</a></p>
+      <p><a href="#categories">Categories</a></p>
+      <p><a href="#products">All Products</a></p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p id="footerWaText">WhatsApp: +92 301 9088013</p>
+      <p>Order karne ke liye WhatsApp button dabayein</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> AH Kitchen Appliances. All rights reserved.</span>
+    <a href="admin.html" class="owner-link">•</a>
+  </div>
+</footer>
+
+<a href="#" id="waFloat" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabaseClient.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
